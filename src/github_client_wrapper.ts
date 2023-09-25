@@ -86,7 +86,7 @@ export class GitHubClientWrapper implements GitHubClient{
     });
   }
 
-  async compate_branch_head(branch_one: string, branch_two: string): Promise<boolean> {
+  async compare_branch_head(branch_one: string, branch_two: string): Promise<boolean> {
     const branchOneData = await this.restClient.repos.getBranch({
       owner: this.owner,
       repo: this.repo,
